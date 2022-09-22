@@ -1,0 +1,1 @@
+<p>Sample page from /post/sample</p>
