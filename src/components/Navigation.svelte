@@ -4,7 +4,8 @@
 
 <style>
   header{
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
     border-bottom: 1px solid #e5e5e5;
     padding: 8px 16px;
   }

@@ -1,1 +1,1 @@
-<h1>This is a +page.svelte in /post</h1>
+<h1>+page.svelte</h1>

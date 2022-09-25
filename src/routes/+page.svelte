@@ -1,5 +1,5 @@
-<ul>
-  <li>
-    <a href="/post/sample">Go to post 100</a>
-  </li>
-</ul>
+<script>
+  import SignInForm from "../components/SignInForm.svelte";
+</script>
+
+<SignInForm/>
