@@ -1,5 +1,5 @@
 /** @type {import('./$types').Actions} */
-/** @type {import('./$types').PageServerLoad} */
+import { invalid } from '@sveltejs/kit';
 
 // import axios from "axios";
 // import Cookies from "js-cookie";
@@ -10,6 +10,10 @@ export const actions = {
     const data = await request.formData();
     const var1 = data.get("var1");
     const var2 = data.get("var2");
+
+    if (!var1 | !var2) {
+			return invalid(400, { var1, var2, missing: true });
+		}
 
     return {
       isSuccess: true,

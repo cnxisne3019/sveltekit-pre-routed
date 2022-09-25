@@ -8,8 +8,7 @@
   /** @type {import('./$types').ActionData} */
   export let form;
 
-  console.log(form)
-
+  console.log(form);
 </script>
 
 <section>
@@ -33,4 +32,9 @@
     response to a form submission. it will vanish if the user reloads -->
   <pre>{JSON.stringify(form, null, 2)}</pre>
   <!-- <button on:click="{logThis(form)}">LogThis</button> -->
+{/if}
+
+{#if form?.missing}
+  <p class="error">The email field is required</p>
+
 {/if}
